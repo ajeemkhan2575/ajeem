@@ -281,7 +281,7 @@ button:nth-child(1):hover {
 .circle:nth-child(2) {
    background: white;
    width: 20rem;
-   background-image: url(images/images.jpg);
+   background-image: url(ajeem.jpg);
    background-size: cover;
    border: 1rem solid white;
    background-repeat: no-repeat;
@@ -311,3 +311,4 @@ button:nth-child(1):hover {
     transform-origin: bottom left;
 
 }
+
