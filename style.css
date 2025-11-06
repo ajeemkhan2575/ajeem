@@ -1,32 +1,20 @@
 /* ===== Responsive Design ===== */
 
-/* For tablets and smaller laptops */
+/* Tablets and smaller laptops */
 @media (max-width: 1024px) {
     .left-container {
         width: 60%;
         padding-left: 2rem;
     }
-
     .right-container {
         width: 40%;
     }
-
     .content h1 {
         font-size: 3rem;
     }
-
-    .content .detail {
-        font-size: 1rem;
-        max-width: 30rem;
-    }
-
-    .btn-container button {
-        font-size: 1rem;
-        padding: 0.6rem 1.2rem;
-    }
 }
 
-/* For mobile devices */
+/* Mobiles */
 @media (max-width: 768px) {
     .portfolio-container {
         flex-direction: column;
@@ -65,16 +53,6 @@
         font-size: 2.5rem;
     }
 
-    .content .intro {
-        font-size: 1.2rem;
-    }
-
-    .content .detail {
-        font-size: 1rem;
-        line-height: 1.6rem;
-        margin: 1rem 0 2rem 0;
-    }
-
     .btn-container {
         display: flex;
         flex-direction: column;
@@ -95,7 +73,7 @@
     }
 
     .circle:nth-child(1) {
-        display: none; /* hide large background circle on small screens */
+        display: none;
     }
 
     .circle:nth-child(2) {
@@ -117,21 +95,18 @@
     }
 }
 
-/* For very small screens (like 480px or less) */
+/* Very small phones */
 @media (max-width: 480px) {
     .content h1 {
         font-size: 2rem;
     }
-
     .content .intro {
         font-size: 1rem;
     }
-
     .btn-container button {
         font-size: 0.9rem;
         padding: 0.5rem 1rem;
     }
-
     .icons .fa-brands {
         font-size: 1.4rem;
     }
