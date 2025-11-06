@@ -1,120 +1,316 @@
-/* ====== Responsive Design ====== */
-@media (max-width: 1200px) {
-    .left-container {
-        width: 65%;
-        padding-left: 2rem;
-    }
+/* 
+.portfolio-container{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    
+}
+.navlist{
+    display: flex;
+    align-items: center;
+    gap: 3.5rem;
+    height: 15vh;
+    width: 100%;
+    justify-content: center;
+    position: fixed;
+}
+.navlist li{
+    list-style-type: none;
+}
+.navlist li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size:1rem; 
+    color: aliceblue;
+}
+.left-container,.right-container{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+}
+.left-container{
+    background: #262525;
+    width: 70%;
+    padding-left: 3rem;
+}
+.right-container{
+    background: #2877ff;
+    width: 30%;
+}
+.icons .fa-brands{
+    color: #bbb;
+    font-size: 1.7rem;
+}
+.icons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    
+}
+.content{
+    margin-left: 4rem;
+}
+.content .intro{
+    font-size: 1.5rem;
+    color: #bbb;
+}
+.content .intro span{
+    color: #2877ff;
+}
+.content h1{
+    font-size: 4rem;
+    color: #2877ff;
+}
+.content .detail{
+    font-size: 1.1rem;
+    color: #fff;
+    max-width: 38rem;
+    margin: 1.1rem 0 3rem 0;
+    line-height: 1.8rem;
+}
+.btn-container button{
+    border: .1rem solid rgb(40, 40, 129);
+    font-size: 1.1rem;
+    padding: .8rem 1.5rem;
+    border-radius: 1.5rem;
+    cursor: pointer;
+    transition:.5s  ease;
+}
+button:nth-child(1){
+    background: #2877ff;
+    color: #262525;
+}
+button:nth-child(2){
+    background-color: transparent ;
+    color: #2877ff;
+    margin-left: 2rem;
+}
+button:nth-child(1):hover{
+    background: transparent;
+    color: #2877ff
 
-    .right-container {
-        width: 35%;
-    }
+}
+button:nth-child(2):hover{
+    background: #2877ff;
+    color: #121314
 
-    .content h1 {
-        font-size: 3.5rem;
-    }
-
-    .content .detail {
-        max-width: 30rem;
-    }
+}
+.icons .fa-brands:hover{
+    cursor: pointer;
+    background: linear-gradient(#fff,#2877ff);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent ;
+}
+.design .circle{
+    aspect-ratio: 1;
+    position: absolute;
+    border-radius: 50%;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+}
+.circle:nth-child(1){
+    background-color: red;
+    width: 38rem;
+}
+.circle:nth-child(2){
+    background-color: rgb(250, 245, 245);
+    width: 38rem;
+} */
+ /* ====== Portfolio Container ====== */
+.portfolio-container {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    position: relative;
+    overflow: hidden;
 }
 
-@media (max-width: 992px) {
-    .portfolio-container {
-        flex-direction: column;
-    }
-
-    .left-container,
-    .right-container {
-        width: 100%;
-        height: auto;
-        padding: 2rem;
-    }
-
-    .right-container {
-        order: -1;
-        background: linear-gradient(-45deg, blue, #262525 80%);
-        min-height: 300px;
-    }
-
-    .content h1 {
-        font-size: 3rem;
-    }
-
-    .content .detail {
-        max-width: 100%;
-    }
-
-    .icons {
-        flex-direction: row;
-        gap: 2rem;
-        margin-top: 1rem;
-    }
-
-    .navlist {
-        gap: 2rem;
-        height: auto;
-        flex-wrap: wrap;
-        justify-content: center;
-        padding: 1rem 0;
-    }
+/* ====== Navbar ====== */
+.navlist {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    height: 15vh;
+    width: 100%;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    flex-wrap:wrap;
+    /* background: rgba(38, 37, 37, 0.9); */
+    z-index: 10;
 }
 
-@media (max-width: 768px) {
-    .content h1 {
-        font-size: 2.5rem;
-    }
-
-    .content .intro {
-        font-size: 1.2rem;
-    }
-
-    .content .detail {
-        font-size: 1rem;
-        line-height: 1.5rem;
-    }
-
-    .btn-container button {
-        padding: 0.6rem 1.2rem;
-        font-size: 1rem;
-    }
-
-    .navlist {
-        gap: 1rem;
-    }
-
-    .circle:nth-child(1) {
-        width: 20rem;
-    }
-
-    .circle:nth-child(2) {
-        width: 15rem;
-    }
+.navlist li {
+    list-style-type: none;
 }
 
-@media (max-width: 480px) {
-    .content h1 {
-        font-size: 2rem;
-    }
+.navlist li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1rem;
+    position: relative;
+    color: aliceblue;
+    transition: color 0.3s ease;
+}
 
-    .content .intro {
-        font-size: 1rem;
-    }
+.navlist li a:hover {
+    color: #2877ff;
+}
 
-    .btn-container button {
-        padding: 0.5rem 1rem;
-        font-size: 0.9rem;
-        margin-left: 0.5rem;
-    }
+/* ====== Left & Right Container ====== */
+.left-container,
+.right-container {
+    display: flex;
+    width:100%;
+    height: auto;
+    paddind:2rem;
+    align-items: center;
+}
 
-    .icons {
-        gap: 1rem;
-    }
+.left-container {
+    background: #262525;
+    width: 70%;
+    padding-left: 3rem;
+}
 
-    .circle:nth-child(1) {
-        width: 15rem;
-    }
+.right-container {
+    background: linear-gradient(-45deg,blue,#262525 80%);
+    order:-1;
+    width: 30%;
+}
 
-    .circle:nth-child(2) {
-        width: 12rem;
-    }
+/* ====== Icons Section ====== */
+.icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+  
+}
+
+.icons .fa-brands {
+    color: #bbb;
+   cursor: pointer;
+    font-size: 1.7rem;
+    transition: 0.3s ease;
+}
+
+.icons .fa-brands:hover {
+    cursor: pointer;
+    background: linear-gradient(#fff, #2877ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* ====== Text Content ====== */
+.content {
+    margin-left: 4rem;
+}
+
+.content .intro {
+    font-size: 1rem;
+    color: #bbb;
+}
+
+.content .intro span {
+    color: #2877ff;
+}
+
+.content h1 {
+    font-size: 2rem;
+    color: #2877ff;
+}
+
+.content .detail {
+    font-size: 0.9rem;
+    color: #fff;
+    max-width: 38rem;
+    margin: 1.1rem 0 3rem 0;
+    line-height: 1.5rem;
+}
+
+/* ====== Buttons ====== */
+.btn-container button {
+    border: 0.1rem solid rgb(40, 40, 129);
+    font-size: 1.9rem;
+    padding: 0.5rem 1rem;
+    border-radius: 1.5rem;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+ button:nth-child(1) {
+    background: #2877ff;
+    color: #262525;
+}
+
+ button:nth-child(2) {
+    background-color: transparent;
+    color: #2877ff;
+    margin-left: 2rem;
+}
+
+button:nth-child(1):hover {
+    background: transparent;
+    color: #2877ff;
+}
+
+ button:nth-child(2):hover {
+    background: #2877ff;
+    color: #121314;
+}
+
+
+
+.design .circle {
+    aspect-ratio: 1;
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+}
+
+.circle:nth-child(1) {
+    background:linear-gradient(90deg,transparent,#262525 50%);
+    width: 29rem;
+   
+}
+
+.circle:nth-child(2) {
+   background: white;
+   width: 20rem;
+   background-image: url(ajeem.jpg);
+   background-size: cover;
+   border: 1rem solid white;
+   background-repeat: no-repeat;
+   background-position: center 44%, 100%;
+   background-size: 140%;
+   box-shadow: 
+   0 0 5rem #020477,
+   inset 0 0 1rem #080897,
+   0 0  #383838,
+   inset  0 0 3rem #3877ff;
+  
+} 
+.navlist li a::after, .navlist .active::after{
+    content: "";
+    position: absolute;
+    background: white;
+    width:100%;
+    height: .1rem;
+    left: 0;
+    bottom: -5px;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform .5s;
+}
+.navlist li a:hover::after, .navlist .active::after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
