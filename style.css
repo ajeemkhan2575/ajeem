@@ -1,3 +1,125 @@
+/* 
+.portfolio-container{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    
+}
+.navlist{
+    display: flex;
+    align-items: center;
+    gap: 3.5rem;
+    height: 15vh;
+    width: 100%;
+    justify-content: center;
+    position: fixed;
+}
+.navlist li{
+    list-style-type: none;
+}
+.navlist li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size:1rem; 
+    color: aliceblue;
+}
+.left-container,.right-container{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+}
+.left-container{
+    background: #262525;
+    width: 70%;
+    padding-left: 3rem;
+}
+.right-container{
+    background: #2877ff;
+    width: 30%;
+}
+.icons .fa-brands{
+    color: #bbb;
+    font-size: 1.7rem;
+}
+.icons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    
+}
+.content{
+    margin-left: 4rem;
+}
+.content .intro{
+    font-size: 1.5rem;
+    color: #bbb;
+}
+.content .intro span{
+    color: #2877ff;
+}
+.content h1{
+    font-size: 4rem;
+    color: #2877ff;
+}
+.content .detail{
+    font-size: 1.1rem;
+    color: #fff;
+    max-width: 38rem;
+    margin: 1.1rem 0 3rem 0;
+    line-height: 1.8rem;
+}
+.btn-container button{
+    border: .1rem solid rgb(40, 40, 129);
+    font-size: 1.1rem;
+    padding: .8rem 1.5rem;
+    border-radius: 1.5rem;
+    cursor: pointer;
+    transition:.5s  ease;
+}
+button:nth-child(1){
+    background: #2877ff;
+    color: #262525;
+}
+button:nth-child(2){
+    background-color: transparent ;
+    color: #2877ff;
+    margin-left: 2rem;
+}
+button:nth-child(1):hover{
+    background: transparent;
+    color: #2877ff
+
+}
+button:nth-child(2):hover{
+    background: #2877ff;
+    color: #121314
+
+}
+.icons .fa-brands:hover{
+    cursor: pointer;
+    background: linear-gradient(#fff,#2877ff);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent ;
+}
+.design .circle{
+    aspect-ratio: 1;
+    position: absolute;
+    border-radius: 50%;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+}
+.circle:nth-child(1){
+    background-color: red;
+    width: 38rem;
+}
+.circle:nth-child(2){
+    background-color: rgb(250, 245, 245);
+    width: 38rem;
+} */
+ /* ====== Portfolio Container ====== */
 .portfolio-container {
     min-height: 100vh;
     width: 100%;
